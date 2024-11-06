@@ -1,0 +1,768 @@
+/*backGround Design */
+.account-settings {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.account-settings .overlap-wrapper {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 1024px;
+}
+
+.account-settings .overlap {
+  position: relative;
+  height: 168px;
+}
+
+.account-setting .div {
+  height: 1024px;
+  top: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px #1486ee40;
+  position: absolute;
+  width: 1440px;
+  left: 0;
+
+}
+
+.account-settings .overlap-group-wrapper {
+  position: absolute;
+  width: 57px;
+  height: 72px;
+  top: 45px;
+  left: 1122px;
+}
+
+.account-settings .overlap-group {
+  position: relative;
+  width: 105px;
+  height: 75px;
+  top: 3px;
+}
+
+ 
+    
+  .account-settings .nav{
+   height: 100px;
+   width: 100%;
+   background-color: #ffffff; 
+   box-shadow: 0px 4px 4px #1486ee40; 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+  }
+
+  .account-settings .image {
+    position: absolute;
+    width: 145px;
+    height: 40px;
+    top: 30px;
+    left: 1000;
+    object-fit: cover;
+    z-index: 1000;
+    position: fixed;
+    object-fit: cover;
+    
+    
+  }
+
+  .account-settings .frame {
+    position: absolute;
+    width: 116px;
+    height: 79px;
+    top: 37px;
+    left: 1243px;
+  }
+ 
+    
+  .account-settings .icon {
+    position: fixed;
+    width: 22px;
+    height: 22px;
+    margin-top: -15px;
+    margin-left: 90px;
+    z-index: 1000;
+   
+  }
+  
+  .account-settings .sort-down {
+   position: fixed;
+    width: 18px;
+    height: 10px;
+    z-index: 1000;
+    margin-left: 122px;
+    margin-top: -9px;
+  }
+
+  .account-settings .overlap2 {
+    position: relative;
+    width: 54px;
+    height: 67px;
+    top: 4px;
+    left: 2px;
+  }
+
+  
+    .account-settings .div {
+      position: relative; 
+      width: 54px; 
+      height: 67px; 
+      top: 4px; 
+      left: 2px; 
+      } 
+      
+   
+      
+      .account-settings .home {
+        position: fixed;
+        margin-top: -20px;
+        margin-left: 120px;
+        width: 23px;
+        height: 22px;
+        z-index: 1000;
+      }
+    
+      .box { 
+        width: 1513px; 
+        height: 199px; 
+      } 
+      
+      .box .rectangle { 
+        position: fixed; 
+        height: 200px;
+        width: 105%;
+        top: -100; 
+        left: 0;
+        display: flex;
+        align-items: center;
+       margin-top: 25px;
+      }
+
+      .bot { 
+        width: 1513px; 
+        height: 199px; 
+      } 
+      
+      .bot .rectangle { 
+        position: fixed; 
+        height: 200px;
+        width: 105%;
+        top: -100; 
+        left: 0;
+        display: flex;
+        align-items: center;
+       margin-top: 600px;
+      }
+
+      .label { 
+        width: 413px; 
+        height: 60px; 
+      } 
+      
+      .label .accSet { 
+        position: fixed; 
+        width: 300px; 
+        height: 35px; 
+        z-index: 100px;
+        margin-top: 150px;
+        margin-left: -1100px;
+      }
+
+      .teacher { 
+        width: 340px; 
+        height: 378px; 
+      } 
+      
+      .teacher .profile { 
+        position: fixed; 
+        width: 310px; 
+        height: 350px; 
+        z-index: 1000px;
+        margin-top: 220px;
+        margin-left: -1110px;
+      }
+
+/* Information of Teacher */
+/* Form Container */
+.col-lg-8 {
+  width: 66.6667%;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Form Row */
+.row {
+  width: 50%; /* To ensure proper width inside the centered container */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  position: fixed;
+  margin-top: -700px;
+  margin-left: -900px;
+}
+
+/* Form Columns */
+.col-md-6 {
+  width: 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Form Labels */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-family: "Lato-Black", Helvetica;
+}
+
+/* Form Inputs */
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input[disabled] {
+  background-color: #e9ecef;
+}
+
+/* Checkbox */
+.custom-control-input {
+  margin-right: 0.5rem;
+}
+
+.custom-control-label {
+  margin-left: 0.25rem;
+  font-weight: normal;
+}
+
+/* Button */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 14px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Divider */
+hr {
+  border: 10px solid #ddd;
+  margin: 1rem 0;
+}
+
+/* Alignment */
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 425px) {
+  .or-phone, .or-tablet {
+      display: none;
+  }
+}
+/* phone*/
+@media (max-width: 425px) {
+   
+  html, body {
+    min-height: 100%; /* Ensure the body stretches to fill the viewport */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+  
+  .account-settings .nav{
+     height: 250px;
+     width: 100%;
+     background-color: hsl(210, 100%, 100%); 
+     box-shadow: 0px 4px 4px #1486ee40; 
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1000;
+    }
+  /* little trackie */
+    .account-settings .image {
+      width: 300px;
+      height: 100px;
+      top: 70px;
+      right: 500;
+      z-index: 1000;
+      position: fixed;
+      object-fit: cover;
+      margin-left: 100px;
+      margin-top: 20px;   
+      
+    }
+  
+    /* chao*/
+    .account-settings .name {
+      position: fixed;
+      font-family: "Lato-Black", Helvetica;
+      font-weight: 900;
+      color: #43425e;
+      font-size: 30px;
+      letter-spacing: -0.4px;
+      line-height: 30px;
+      white-space: nowrap;
+      z-index: 1000;
+      margin-top: 120px;
+      margin-left: 1085px;
+    }
+    /* tao*/   
+    .account-settings .icon {
+      position: fixed;
+      width: 90px;
+      height: 80px;
+      margin-top: 40px;
+      margin-left: 1100px;
+      z-index: 1000;
+     
+    }
+     /* arrow pababa*/
+    .account-settings .sort-down {
+      position: fixed;
+      width: 50px;
+      height: 40px;
+      margin-top: 50px;
+      margin-left: 1200px;
+      z-index: 1000;
+    }
+  
+        
+        .account-settings .homie {
+          position: fixed;
+          font-family: "Lato-Black", Helvetica;
+          font-weight: 900;
+          color: #43425e;
+          font-size: 30px;
+          letter-spacing: -0.4px;
+          line-height: 30px;
+          white-space: nowrap;
+          z-index: 1000;
+          margin-top: 120px;
+          margin-left: 1005px;
+        }
+      
+        
+        .account-settings .home {
+          position: fixed;
+          width: 90px;
+          height: 80px;
+          margin-top: 40px;
+          margin-left: 1005px;
+          z-index: 1000;
+        }
+      
+        
+        .box .rectangle { 
+          position: fixed; 
+          height: 500px;
+          width: 105%;
+          top: -100; 
+          left: 0;
+          display: flex;
+          align-items: center;
+         margin-top: 200px;
+        }
+  
+       
+        .bot .rectangle { 
+          position: fixed; 
+          height: 700px;
+          width: 105%;
+          left: 0;
+          display: flex;
+          align-items: center;
+         margin-top: 4020px;
+        }
+  
+        
+        .label .accSet { 
+          position: fixed; 
+          height: 120px;
+          width: 40%;
+          top: -100; 
+          display: flex;
+          align-items: center;
+         margin-top: 700px;
+         margin-left: -220px;
+
+        }
+  
+       
+        .teacher .profile { 
+          position: fixed; 
+          height: 1000px;
+          width: 35%;
+          display: flex;
+          align-items: center;
+         margin-top: 900px;
+         margin-left: -200px;
+        }
+  
+  /* Information of Teacher */
+  /* Form Container */
+  .col-lg-8 {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    margin-left: 500px;
+    margin-top: 1590px;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 180vh; /* Full viewport height */
+  }
+  
+  /* Form Row */
+  .row {
+    width: 70%; /* To ensure proper width inside the centered container */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px;
+    position: fixed;
+    margin-top: -700px;
+    margin-left: -900px;
+  }
+  
+  /* Form Columns */
+  .col-md-6 {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Labels */
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-family: "Lato-Black", Helvetica;
+    font-size: 70px;
+  }
+  
+  /* Form Inputs */
+  .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #b1aeae;
+    border-radius: 4px;
+    font-size: 50px;
+    box-sizing: border-box;
+  }
+  
+  input[disabled] {
+    background-color: #bfd0e9;
+  }
+  
+  /* Checkbox */
+  .custom-control-input {
+    margin-right: 0.5rem;
+  }
+  
+  .custom-control-label {
+    margin-left: 0.25rem;
+    font-weight: normal;
+  }
+  
+  /* Button */
+  .btn {
+    padding: 2.5rem 1.5rem;
+    border-radius: 6px;
+    font-size: 80px;
+    cursor: pointer;
+    margin-left: 14px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Divider */
+  hr {
+    border: 10px solid #ddd;
+    margin: 1rem 0;
+  }
+  
+  /* Alignment */
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .or-phone {
+    display: flex; /* Show or-phone in phone styles */
+  }
+  .or-tablet {
+    display: none; /* Hide or-tablet in phone styles */
+  }
+  
+}
+
+/* tablet Styles */
+@media (max-width: 768px) {
+
+   
+  .account-settings .nav{
+    height: 400px;
+    width: 100%;
+    background-color: hsl(210, 100%, 100%); 
+    box-shadow: 0px 4px 4px #1486ee40; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+   }
+ /* little trackie */
+   .account-settings .image {
+     width: 500px;
+     height: 150px;
+     top: 150px;
+     right: 500;
+     z-index: 1000;
+     position: fixed;
+     object-fit: cover;
+     margin-left: 100px;
+     margin-top: 20px;   
+     
+   }
+ 
+   
+   /* tao*/   
+   .account-settings .icon {
+    width: 100px;
+    height: 100px;
+    top: 150px;
+    right: 350px;
+    z-index: 1000;
+    position: fixed;
+    object-fit: cover;
+    margin-top: 20px;   
+
+    
+   }
+    /* arrow pababa*/
+   .account-settings .sort-down {
+    width: 100px;
+    height: 45px;
+    top: 163px;
+    right: 250px;
+    z-index: 1000;
+    position: fixed;
+    object-fit: cover;
+    margin-top: 35px;  
+   }
+ 
+     
+       
+    .account-settings .home {
+      width: 100px;
+      height: 100px;
+      top: 150px;
+      right: 600px;
+      z-index: 1000;
+      position: fixed;
+      object-fit: cover;
+      margin-top: 20px;   
+   
+       }
+     
+       
+       .box .rectangle { 
+         position: fixed; 
+         height: 600px;
+         width: 110%;
+         top: -100; 
+         left: 30px;
+         display: flex;
+         align-items: center;
+        margin-top: 300px;
+       }
+ 
+      
+       .bot .rectangle { 
+         position: fixed; 
+         height: 600px;
+         width: 110%;
+         left: 0;
+         display: flex;
+         align-items: center;
+        margin-top: 3500px;
+       }
+ 
+       
+       .label .accSet { 
+         position: fixed; 
+         height: 200px;
+         width: 50%;
+         top: -100; 
+         display: flex;
+         align-items: center;
+        margin-top: 800px;
+        margin-left: -570px;
+
+       }
+ 
+      
+       .teacher .profile { 
+         position: fixed; 
+         height: 1120px;
+         width: 45%;
+         display: flex;
+         align-items: center;
+        margin-top: 1100px;
+        margin-left: -550px;
+       }
+ 
+ /* Information of Teacher */
+ /* Form Container */
+ .col-lg-8 {
+   width: 100%;
+   padding-bottom: 1.5rem;
+   margin-left: 500px;
+   margin-top: 1590px;
+   display: flex;
+   justify-content: center; /* Horizontal centering */
+   align-items: center; /* Vertical centering */
+   height: 240vh; /* Full viewport height */
+ }
+ 
+ /* Form Row */
+ .row {
+   width: 70%; /* To ensure proper width inside the centered container */
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 50px;
+   position: fixed;
+   margin-top: -700px;
+   margin-left: -950px;
+ }
+ 
+ /* Form Columns */
+ .col-md-6 {
+   width: 100%;
+   padding: 0 15px;
+   box-sizing: border-box;
+   margin-bottom: 1.5rem;
+ }
+ 
+ /* Form Group */
+ .form-group {
+   margin-bottom: 3rem;
+ }
+ 
+ /* Form Labels */
+ label {
+   display: block;
+   margin-bottom: 0.5rem;
+   font-weight: bold;
+   font-family: "Lato-Black", Helvetica;
+   font-size: 72px;
+ }
+ 
+ /* Form Inputs */
+ .form-control {
+   width: 100%;
+   padding: 0.75rem;
+   border: 1px solid #b1aeae;
+   border-radius: 4px;
+   font-size: 50px;
+   box-sizing: border-box;
+ }
+ 
+ input[disabled] {
+   background-color: #bfd0e9;
+ }
+ 
+ /* Button */
+ .btn {
+   padding: 2.5rem 1.5rem;
+   border-radius: 6px;
+   font-size: 80px;
+   cursor: pointer;
+   margin-left: 600px;
+   margin-top: 50px;
+ }
+ 
+ .btn-primary {
+   background-color: #007bff;
+   color: white;
+   border: none;
+ }
+ 
+ .btn-primary:hover {
+   background-color: #0056b3;
+ }
+ 
+ 
+ /* Alignment */
+ .d-flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+ .or-desktop {
+  display: none; /* Hide or-desktop in tablet styles */
+}
+.or-tablet {
+  display: flex; /* Show or-tablet in tablet styles */
+}
+.or-phone {
+  display: none; /* Hide or-phone in tablet styles */
+}
+
+}
+
