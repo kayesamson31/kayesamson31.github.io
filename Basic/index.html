@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Budget Management App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <button data-target="screen1">Home</button>
+    <!--
+    <button data-target="screen2">Screen 2</button>
+    <button data-target="screen3">Screen 3</button>
+    <button data-target="screen4">Screen 4</button>
+  -->
+  </nav>
+
+  <main>
+    <!-- Screen 1 -->
+    <section id="screen1" class="screen active">
+      <div class="activity-log">
+        <h1>Budget Management System</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Activity</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>03-31-2024</td>
+              <td>Budget 2024</td>
+              <td><button class="view-finished-btn">Finished Budget</button></td>
+            </tr>
+            <tr>
+              <td>01-1-2025</td>
+              <td>Budget 2025</td>
+              <td><button class="view-approved-btn">Approved Budget</button></td>
+            </tr>
+          </tbody>
+        </table>
+      <div style="margin-top: 2rem; text-align: center;">
+        <button data-target="screen2" class="approval-btn">Create Budget</button>
+      </div>
+    </section>
+
+    <!-- Screen 2 -->
+    <section id="screen2" class="screen">
+      <h2>Budget Details</h2>
+      <table class="budget-table">
+        <thead>
+          <tr>
+            <th colspan="2">Program, Projects, Activities<br><small>(By Expense Class and Object of Expenditure)</small></th>
+            <th>Budget Year Expenditure</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="section-header">
+            <td colspan="3">Part I. Receipt Programs</td>
+          </tr>
+          <tr>
+            <td colspan="2">2024 Income</td>
+            <td>500,000.00</td>
+          </tr>
+          <tr>
+            <td colspan="2">2025 Income</td>
+            <td>40,000.00</td>
+          </tr>
+          <tr class="subtotal">
+            <td colspan="2">TOTAL RECEIPTS</td>
+            <td><strong>540,000.00</strong></td>
+          </tr>
+          <tr class="section-header">
+            <td colspan="3">Part II. Expenditure Programs</td>
+          </tr>
+          <tr>
+            <td colspan="2">Maintenance and other operating expenses (MOOE)</td>
+            <td><input type="text" placeholder="Enter amount"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Capital Outlay (CO)</td>
+            <td><input type="text" placeholder="Enter Amount"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Personal Services (PS)</td>
+            <td><input type="text" placeholder="Enter amount"></td>
+          </tr>
+          <tr class="subtotal">
+            <td colspan="2">TOTAL</td>
+            <td>500,000.00</td>
+          </tr>
+          <tr class="subtotal">
+            <td colspan="2">Ending Balance</td>
+            <td><strong>40,000.00</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top: 2rem; text-align: right;">
+        <button type="submit" class="approval-btn">Request Approval</button>
+      </div>
+    </section>
+
+    <!-- Screen 3 -->
+    <section id="screen3" class="screen">
+      
+      <button class="supplement-btn">Supplement Budget</button>
+      <button class="Realign-btn">Realign Budget</button>
+      <table class="budget-table">
+        <thead>
+          <tr>
+            <th colspan="2">Program, Projects, Activities<br><small>(By Expense Class and Object of Expenditure)</small></th>
+            <th>Budget Year Expenditure</th>
+            <th>Remaining</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="section-header">
+            <td colspan="3">Part I. Receipt Programs</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td colspan="2">2024 Income</td>
+            <td>500,000.00</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td colspan="2">2025 Income</td>
+            <td>40,000.00</td>
+            <td> </td>
+          </tr>
+          <tr class="subtotal">
+            <td colspan="2">TOTAL RECEIPTS</td>
+            <td><strong>540,000.00</strong></td>
+            <td><strong>-</strong></td>
+          </tr>
+          <tr class="section-header">
+            <td colspan="3">Part I. Expenditure Programs</td>
+            <td><strong> </strong></td>
+          </tr>
+          <tr>
+            <td colspan="2">Maintenance and other operating expenses (MOOE)</td>
+            <td >100,000.00</td>
+            <td>60,000.00</td>
+          </tr>
+          <tr>
+            <td colspan="2">Capital Outlay (CO)</td>
+            <td>200,000.00</td>
+            <td >30,000.00</td>
+          </tr>
+          <tr>
+            <td colspan="2">Personal Services (PS)</td>
+            <td>300,000.00</td>
+            <td>180,000.00</td>
+          </tr>
+          <tr class="subtotal">
+            <td colspan="2">TOTAL</td>
+            <td>500,000.00 </td>
+            <td>270,000.00</td>
+          </tr>
+          <tr class="subtotal">
+            <td colspan="2">Ending Balance</td>
+            <td><strong>40,000.00</strong></td>
+            <td> </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="activity-log">
+        <h3>Budget Activity Logs</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Activity</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>03-31-2025</td>
+              <td>Budget 2024</td>
+              <td>Finished</td>
+            </tr>
+            <tr>
+              <td>01-1-2025</td>
+              <td>Budget 2025</td>
+              <td>Approved</td>
+            </tr>
+          </tbody>
+        </table>
+    </section>
+
+    <!-- Screen 4 -->
+    <section id="screen4" class="screen">
+      <h2>Budget Realignment</h2>
+      <form class="realignment-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="budgetType1">Budget Type</label>
+            <select id="budgetType1">
+              <option value="mooe">MOOE</option>
+              <option value="co">CO</option>
+              <option value="ps">PS</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="amount1">Amount</label>
+            <input type="text" id="amount1" placeholder="Enter Amount" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="budgetType2"> </label>
+            <select id="budgetType2">
+              <option value="co">CO</option>
+              <option value="mooe">MOOE</option>
+              <option value="ps">PS</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="amount2"> </label>
+            <input type="text" id="amount2" placeholder="Enter Amount" />
+          </div>
+        </div>
+        <button type="submit" class="approval-btn">Request Approval</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
